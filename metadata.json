@@ -1,0 +1,6 @@
+{
+  "name": "Drive Archive Inspector",
+  "description": "Deep-inspection workbench for Google Drive folders and ZIP archives, examining internal directory trees, file formats, integrity checks, and source code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
