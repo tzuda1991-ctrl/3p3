@@ -14,7 +14,7 @@ public class GameApplication extends Application {
     private static GameApplication instance;
     public static Context appLevelContext;
     private Socket mSocket;
-    private static final String URL = "http://64.227.186.5:3002/dragon_tiger";
+    private static final String URL = "https://thriving-embrace-production-5294ba38.up.railway.app/dragon_tiger";
 
     public static GameApplication getInstance() {
         return instance;

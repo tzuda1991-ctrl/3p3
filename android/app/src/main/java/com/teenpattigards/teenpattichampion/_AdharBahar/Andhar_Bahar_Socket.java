@@ -144,7 +144,7 @@ ImageView txtGameRunning,txtGameBets;
     View ChipstoUser;
     private boolean isCountDownStart;
 
-    private static final  String URL = "http://64.227.186.5:3002/ander_bahar";
+    private static final  String URL = "https://thriving-embrace-production-5294ba38.up.railway.app/ander_bahar";
     Socket mSocket;
 
     @Override

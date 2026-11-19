@@ -5,7 +5,7 @@ import android.net.ConnectivityManager;
 
 public class Const {
 
- public static final String AVIATOR_MAIN = "http://64.227.186.5:3002/api";  //URL FOR DEVELOPMENT
+ public static final String AVIATOR_MAIN = "https://thriving-embrace-production-5294ba38.up.railway.app/api";  //URL FOR DEVELOPMENT
  public static final String AVIATOR_GAME_BETTING = AVIATOR_MAIN + "/addBet";
  public static final String AVIATOR_Token = "173482882103bb4460fbbaa958585d91";
  public static final String AVIATOR_GAME_REDEEM = AVIATOR_MAIN + "/redeem";
@@ -13,7 +13,7 @@ public class Const {
 
     // Enter your Base URL
 //   public static final String MAIN = "https://demo.androappstech.in/"; //URL FOR CLIENT DEMO
-   public static final String MAIN = "http://139.59.68.120/letscard/";  //URL FOR DEVELOPMENT
+   public static final String MAIN = "https://3p3-production.up.railway.app/";  //URL FOR DEVELOPMENT
 
     public static final String IMGAE_PATH = MAIN + "data/post/";
     public static final String REDEEM_IMGAE_PATH = MAIN + "data/Redeem/";

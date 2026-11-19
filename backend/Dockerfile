@@ -31,4 +31,4 @@ RUN mkdir -p application/cache application/logs uploads \
 RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 
 # Bind Apache safely to Railway's dynamic $PORT
-CMD ["sh", "-c", "sed -i \"s/Listen 80/Listen ${PORT:-8080}/g\" /etc/apache2/ports.conf && sed -i \"s/:80>/:${PORT:-8080}>/g\" /etc/apache2/sites-available/000-default.conf && apache2-foreground"]
+CMD ["sh", "-c", "PORT=${PORT:-8080}; echo \"Listen $PORT\" > /etc/apache2/ports.conf && sed -ri \"s/<VirtualHost \*:[0-9]+>/<VirtualHost *:$PORT>/g\" /etc/apache2/sites-available/000-default.conf && exec apache2-foreground"]

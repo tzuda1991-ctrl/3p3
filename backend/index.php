@@ -33,8 +33,11 @@ $schemaReady = false;
 $dbError = null;
 
 if ($dbHost && $dbName && extension_loaded('mysqli')) {
-    $mysqli = @new mysqli($dbHost, $dbUser, $dbPass, $dbName, $dbPort);
-    if ($mysqli->connect_error) {
+    mysqli_report(MYSQLI_REPORT_OFF);
+    $mysqli = mysqli_init();
+    $mysqli->options(MYSQLI_OPT_CONNECT_TIMEOUT, 3);
+    $connected = @$mysqli->real_connect($dbHost, $dbUser, $dbPass, $dbName, $dbPort);
+    if (!$connected || $mysqli->connect_error) {
         $dbError = $mysqli->connect_error;
         $mysqli = null;
     } else {

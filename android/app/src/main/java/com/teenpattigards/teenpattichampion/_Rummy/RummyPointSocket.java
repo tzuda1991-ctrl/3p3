@@ -220,7 +220,7 @@ public class RummyPointSocket extends BaseActivity implements Animation.Animatio
     CountDownTimer declareCountDown;
     boolean isDeclareShow = false;
 
-    private static final  String URL = "http://64.227.186.5:3002/rummy";
+    private static final  String URL = "https://thriving-embrace-production-5294ba38.up.railway.app/rummy";
     Socket mSocket;
 
     JSONObject jsonObjectUser = null;

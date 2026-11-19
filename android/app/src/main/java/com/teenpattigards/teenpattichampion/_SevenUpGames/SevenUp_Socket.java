@@ -133,7 +133,7 @@ public class SevenUp_Socket extends BaseActivity implements View.OnClickListener
     public String token = "";
     int version = 0 ;
 
-    private static final  String URL = "http://64.227.186.5:3002/seven_up_down";
+    private static final  String URL = "https://thriving-embrace-production-5294ba38.up.railway.app/seven_up_down";
     Socket mSocket;
 
     @Override

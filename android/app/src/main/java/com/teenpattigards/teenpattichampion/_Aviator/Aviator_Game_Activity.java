@@ -70,13 +70,13 @@ public class Aviator_Game_Activity extends AppCompatActivity {
     String get_socket_responce = "";
     String final_game_id = "1111";
     String redeem_gameid = "";
-    //private static final String URL = "http://64.227.186.5:3002";
+    //private static final String URL = "https://thriving-embrace-production-5294ba38.up.railway.app";
     private Socket mSocket;
     String wallet_amount = "",user_id;
 
     {
         try {
-            mSocket = IO.socket("http://64.227.186.5:3002/aviator");
+            mSocket = IO.socket("https://thriving-embrace-production-5294ba38.up.railway.app/aviator");
         } catch (URISyntaxException e) {
         }
     }

@@ -211,7 +211,7 @@ public class TeenPattiSocket extends BaseActivity {
     private final String TOKEN = Const.TOKEN;
     private final String IMGAE_PATH = Const.IMGAE_PATH;
 
-    private static final  String URL = "http://64.227.186.5:3002/teenpatti";
+    private static final  String URL = "https://thriving-embrace-production-5294ba38.up.railway.app/teenpatti";
     Socket mSocket;
 
     JSONObject jsonObjectUser = null;

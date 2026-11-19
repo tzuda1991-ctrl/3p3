@@ -129,7 +129,7 @@ public class DragonTigerSocket extends BaseActivity implements View.OnClickListe
     int version = 0 ;
 
 
-    private static final  String URL = "http://64.227.186.5:3002/dragon_tiger";
+    private static final  String URL = "https://thriving-embrace-production-5294ba38.up.railway.app/dragon_tiger";
     Socket mSocket;
 
     @Override
