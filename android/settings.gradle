@@ -1,0 +1,3 @@
+rootProject.name='teenpattichampion'
+include ':app'
+include ':ludogame'
