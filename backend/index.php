@@ -1,4 +1,9 @@
 <?php
+$rawPath = strtolower(trim(parse_url($_SERVER["REQUEST_URI"] ?? "/", PHP_URL_PATH), "/"));
+if ($rawPath === "admin" || str_starts_with($rawPath, "admin/")) {
+    require __DIR__ . "/admin.php";
+    exit;
+}
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: Content-Type, Authorization, token');
