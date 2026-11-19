@@ -7,6 +7,7 @@ RUN npm install --legacy-peer-deps
 
 COPY index.html tsconfig.json vite.config.ts server.mjs firebase-applet-config.json ./
 COPY src ./src
+COPY public ./public
 
 RUN npm run build
 

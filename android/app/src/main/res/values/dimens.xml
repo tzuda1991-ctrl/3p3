@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ab_card_hight">84dp</dimen>
+    <dimen name="ab_card_width">60dp</dimen>
+    <dimen name="card_hieght">84dp</dimen>
+    <dimen name="card_right_margin">8dp</dimen>
+    <dimen name="card_top_margin">8dp</dimen>
+    <dimen name="card_width">60dp</dimen>
+    <dimen name="chip_up">16dp</dimen>
+    <dimen name="chips_size">40dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dp10">16dp</dimen>
+    <dimen name="dp2">16dp</dimen>
+    <dimen name="dp20">16dp</dimen>
+    <dimen name="dp25">16dp</dimen>
+    <dimen name="dp300">16dp</dimen>
+    <dimen name="dp35">16dp</dimen>
+    <dimen name="dp5">16dp</dimen>
+    <dimen name="dp70">16dp</dimen>
+    <dimen name="dt_card_hight">84dp</dimen>
+    <dimen name="dt_card_width">60dp</dimen>
+    <dimen name="home_card_height">84dp</dimen>
+    <dimen name="home_card_width">60dp</dimen>
+    <dimen name="jackpot_card_size">40dp</dimen>
+    <dimen name="margin_left">8dp</dimen>
+    <dimen name="margin_left_group">8dp</dimen>
+    <dimen name="payu_dimen_25dp">25dp</dimen>
+    <dimen name="table_joker_card_width">60dp</dimen>
+    <dimen name="user_size">40dp</dimen>
+    <dimen name="wallet_text_margin_top">8dp</dimen>
+</resources>
