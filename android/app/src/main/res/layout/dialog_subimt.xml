@@ -1,107 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#0F172A">
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_border"
+    android:orientation="vertical"
+    android:padding="20dp">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:text="Verify OTP (Use: 1234)"
+            android:textColor="#FBBF24"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="dialog_subimt"
-                android:textColor="#FBBF24"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="12dp" />
+        <ImageView
+            android:id="@+id/imgclose"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/close" />
+    </RelativeLayout>
 
-    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rec_user_points" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.google.android.material.tabs.TabLayout android:id="@+id/tablayout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <ImageView android:id="@+id/imgclose" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <TextView android:id="@+id/tv_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <EditText android:id="@+id/edit_OTP" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edit_OTP" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <ImageView android:id="@+id/imglogin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <View android:id="@+id/lnrListingbg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <ImageView android:id="@+id/imgclosetop" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <RelativeLayout android:id="@+id/rltParentView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:id="@+id/lnrCreateTable" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <TextView android:id="@+id/txtheader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <TextView android:id="@+id/tvValue1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <TextView android:id="@+id/tvValue2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <TextView android:id="@+id/tvValue3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <TextView android:id="@+id/tvValue4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <TextView android:id="@+id/tvValue5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <TextView android:id="@+id/tvValue6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <TextView android:id="@+id/tvValue7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <TextView android:id="@+id/tvValue8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <EditText android:id="@+id/edt_reffer" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edt_reffer" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-        <RadioButton android:id="@+id/radioGroup_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male" android:textColor="#FFFFFF" android:checked="true" />
-        <RadioButton android:id="@+id/radioGroup_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" android:textColor="#FFFFFF" />
-    </RadioGroup>
-    <TextView android:id="@+id/tvMobileNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <EditText android:id="@+id/editText1" android:layout_width="match_parent" android:layout_height="44dp" android:hint="editText1" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <EditText android:id="@+id/editText2" android:layout_width="match_parent" android:layout_height="44dp" android:hint="editText2" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <EditText android:id="@+id/editText3" android:layout_width="match_parent" android:layout_height="44dp" android:hint="editText3" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <EditText android:id="@+id/editText4" android:layout_width="match_parent" android:layout_height="44dp" android:hint="editText4" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <ViewFlipper android:id="@+id/loginFlipper" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" /></ViewFlipper>
-    <ImageView android:id="@+id/imgBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <ImageView android:id="@+id/imgBackgroundlogin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <EditText android:id="@+id/edtPhone" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtPhone" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <EditText android:id="@+id/edtEmail" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtEmail" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <EditText android:id="@+id/edtname" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtname" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <EditText android:id="@+id/edtReferalCode" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtReferalCode" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <RadioGroup android:id="@+id/bottomradioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-        <RadioButton android:id="@+id/bottomradioGroup_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male" android:textColor="#FFFFFF" android:checked="true" />
-        <RadioButton android:id="@+id/bottomradioGroup_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" android:textColor="#FFFFFF" />
-    </RadioGroup>
-    <RelativeLayout android:id="@+id/rltVerifycode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:id="@+id/lnrResentOTP" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:id="@+id/editLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <Button android:id="@+id/btnrefer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btnrefer" />
-    <ImageView android:id="@+id/imgfacebook" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <ImageView android:id="@+id/imggoogle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:id="@+id/lnrVerifyotpview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <TextView android:id="@+id/tv_uploadname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <EditText android:id="@+id/edtPasswordLogin" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtPasswordLogin" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <EditText android:id="@+id/edtPhoneLogin" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtPhoneLogin" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <EditText android:id="@+id/edit_phone_edit" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edit_phone_edit" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <TextView android:id="@+id/tv_edit_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
-    <EditText android:id="@+id/edtPassword" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtPassword" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
-    <LinearLayout android:id="@+id/lnrFirstScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:id="@+id/lnrSeconScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:id="@+id/lnrThirdScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/design_bottom_sheet"
+    <EditText
+        android:id="@+id/edit_OTP"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#1E293B"
-        android:padding="16dp"
-        app:behavior_hideable="true"
-        app:behavior_peekHeight="0dp"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
-    <LinearLayout
-        android:id="@+id/bottom_sheet"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_edit_box"
+        android:hint="Enter OTP (1234)"
+        android:inputType="number"
+        android:paddingLeft="14dp"
+        android:text="1234"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#94A3B8"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/edit_phone_edit"
         android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_box"
+        android:hint="Mobile Number"
+        android:paddingLeft="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#94A3B8"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_edit_no"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#1E293B"
-        android:padding="16dp"
-        app:behavior_hideable="true"
-        app:behavior_peekHeight="0dp"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        android:text="Edit Mobile"
+        android:textColor="#94A3B8"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imglogin"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/btn_green_bg"
+        android:padding="10dp"
+        android:src="@drawable/correct"
+        android:scaleType="centerInside" />
+</LinearLayout>

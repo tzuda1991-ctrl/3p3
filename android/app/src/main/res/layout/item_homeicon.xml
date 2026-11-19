@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#0F172A">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="176dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/background_border"
+    android:padding="4dp">
 
-    <ScrollView
+    <ImageView
+        android:id="@+id/ivHomegamecard"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
-    <ImageView android:id="@+id/ivHomegamecard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
-</RelativeLayout>
+        android:scaleType="fitCenter" />
+</FrameLayout>
