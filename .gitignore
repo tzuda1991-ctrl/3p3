@@ -1,8 +1,37 @@
+# Node / Web App
 node_modules/
 build/
 dist/
 coverage/
-.DS_Store
 *.log
+
+# Environment & Secrets
 .env*
 !.env.example
+!backend/.env.example
+!socket-server/.env.example
+*.jks
+*.keystore
+
+# PHP / Backend Bloat
+backend/vendor/
+backend/phpmyadmin/
+
+# Android Studio / Gradle Build Cache
+android/.gradle/
+android/local.properties
+android/app/build/
+android/ludogame/build/
+android/upiPay/build/
+android/.idea/
+android/*.iml
+android/app/*.iml
+*.apk
+*.ap_
+*.aab
+*.dex
+
+# OS & Temp
+.DS_Store
+__MACOSX/
+Thumbs.db
