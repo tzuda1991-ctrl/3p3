@@ -1,9 +1,9 @@
--- Teen Patti Champion — Starter MySQL Schema for Railway
--- Import this into your Railway MySQL service if your original .sql dump is unavailable.
+-- Teen Patti Champion — Auto-Applied MySQL Schema for Railway
+-- Note: backend/index.php automatically runs these CREATE TABLE IF NOT EXISTS statements on startup.
 
 CREATE TABLE IF NOT EXISTS tbl_users (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(120) NOT NULL DEFAULT '',
+  name VARCHAR(120) NOT NULL DEFAULT 'Player',
   mobile VARCHAR(20) UNIQUE,
   email VARCHAR(160) DEFAULT '',
   password VARCHAR(255) DEFAULT '',
@@ -11,7 +11,9 @@ CREATE TABLE IF NOT EXISTS tbl_users (
   profile_pic VARCHAR(255) DEFAULT '',
   wallet DECIMAL(14,2) NOT NULL DEFAULT 1000.00,
   winning_wallet DECIMAL(14,2) NOT NULL DEFAULT 0.00,
-  bonus_wallet DECIMAL(14,2) NOT NULL DEFAULT 0.00,
+  bonus_wallet DECIMAL(14,2) NOT NULL DEFAULT 100.00,
+  spin_remaining INT NOT NULL DEFAULT 3,
+  game_played INT NOT NULL DEFAULT 0,
   referral_code VARCHAR(40) DEFAULT '',
   referred_by VARCHAR(40) DEFAULT '',
   bank_detail TEXT NULL,
@@ -21,6 +23,13 @@ CREATE TABLE IF NOT EXISTS tbl_users (
   fcm VARCHAR(255) DEFAULT '',
   status TINYINT(1) NOT NULL DEFAULT 1,
   added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS tbl_otp (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  mobile VARCHAR(20) NOT NULL,
+  otp VARCHAR(10) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS tbl_setting (
@@ -50,14 +59,18 @@ CREATE TABLE IF NOT EXISTS tbl_setting (
   referral_amount DECIMAL(10,2) DEFAULT 50.00,
   joining_amount DECIMAL(10,2) DEFAULT 100.00,
   app_version VARCHAR(20) DEFAULT '1.0',
+  terms TEXT NULL,
+  privacy_policy TEXT NULL,
   updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO tbl_setting (id) VALUES (1) ON DUPLICATE KEY UPDATE id = id;
+INSERT INTO tbl_setting (id, terms, privacy_policy)
+VALUES (1, 'Play responsibly. 18+ only.', 'We protect your account and gameplay data.')
+ON DUPLICATE KEY UPDATE id = id;
 
 CREATE TABLE IF NOT EXISTS tbl_banner (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  img VARCHAR(255) NOT NULL,
+  banner VARCHAR(255) NOT NULL,
   status TINYINT(1) DEFAULT 1,
   added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
