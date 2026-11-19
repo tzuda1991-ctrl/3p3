@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
     git \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install mysqli pdo pdo_mysql gd zip \
-    && a2enmod rewrite headers \
+    && a2dismod mpm_event mpm_worker || true \
+    && a2enmod mpm_prefork rewrite headers \
     && echo "ServerName localhost" >> /etc/apache2/apache2.conf \
     && rm -rf /var/lib/apt/lists/*
 
@@ -26,9 +27,8 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction || true
 COPY . .
 
 RUN mkdir -p application/cache application/logs uploads \
-    && chown -R www-data:www-data /var/www/html
+    && chown -R www-data:www-data /var/www/html \
+    && chmod +x /var/www/html/start.sh \
+    && sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 
-RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
-
-# Bind Apache safely to Railway's dynamic $PORT
-CMD ["sh", "-c", "PORT=${PORT:-8080}; echo \"Listen $PORT\" > /etc/apache2/ports.conf && sed -ri \"s/<VirtualHost \*:[0-9]+>/<VirtualHost *:$PORT>/g\" /etc/apache2/sites-available/000-default.conf && exec apache2-foreground"]
+CMD ["/var/www/html/start.sh"]
