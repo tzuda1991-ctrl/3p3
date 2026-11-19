@@ -23,10 +23,17 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        jcenter()
         maven { url "https://jitpack.io" }
-        maven { url "https://artifactory.paytm.in/libs-release-local" }
-        maven {url 'https://maven.cashfree.com/release'}
+        maven {
+            url "https://artifactory.paytm.in/libs-release-local"
+            content { includeGroupByRegex "com\\.paytm.*" }
+        }
+        maven {
+            url 'https://maven.cashfree.com/release'
+            content { includeGroupByRegex "com\\.cashfree.*" }
+        }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        jcenter()
 
     }
 }

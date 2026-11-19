@@ -27,13 +27,14 @@ android {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         jcenter()
 //        maven {
 //            url "https://mint.splunk.com/gradle/"
 //        }
-        maven {
-            url "https://jitpack.io"
-        }
 
     }
     compileOptions {
