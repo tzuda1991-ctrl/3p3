@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F172A" />
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+    <Button android:id="@+id/spinBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="spinBtn" />
+    <TextView android:id="@+id/resultTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/wheel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/btnDummyPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <RadioGroup android:id="@+id/radioAppChoice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <RadioButton android:id="@+id/radioAppChoice_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male" android:textColor="#FFFFFF" android:checked="true" />
+        <RadioButton android:id="@+id/radioAppChoice_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" android:textColor="#FFFFFF" />
+    </RadioGroup>
+    <RelativeLayout android:id="@+id/rl_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgPaynow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtChipsdetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/imgback" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/pay_load" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/app_default" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/app_amazonpay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/app_bhim_upi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/app_google_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/app_phonepe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/app_paytm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

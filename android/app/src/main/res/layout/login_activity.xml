@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F172A" />
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teen Patti Champion — Login"
+                android:textColor="#FBBF24"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+    <EditText android:id="@+id/edt_reffer" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edt_reffer" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <ImageView android:id="@+id/imgclose" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imglogin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <RadioButton android:id="@+id/radioGroup_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male" android:textColor="#FFFFFF" android:checked="true" />
+        <RadioButton android:id="@+id/radioGroup_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" android:textColor="#FFFFFF" />
+    </RadioGroup>
+    <EditText android:id="@+id/edit_OTP" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edit_OTP" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <TextView android:id="@+id/tvMobileNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <EditText android:id="@+id/editText1" android:layout_width="match_parent" android:layout_height="44dp" android:hint="editText1" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/editText2" android:layout_width="match_parent" android:layout_height="44dp" android:hint="editText2" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/editText3" android:layout_width="match_parent" android:layout_height="44dp" android:hint="editText3" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/editText4" android:layout_width="match_parent" android:layout_height="44dp" android:hint="editText4" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <ViewFlipper android:id="@+id/loginFlipper" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" /></ViewFlipper>
+    <ImageView android:id="@+id/imgBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgBackgroundlogin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/edtPhone" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtPhone" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edtEmail" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtEmail" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edtname" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtname" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edtReferalCode" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtReferalCode" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <RadioGroup android:id="@+id/bottomradioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <RadioButton android:id="@+id/bottomradioGroup_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male" android:textColor="#FFFFFF" android:checked="true" />
+        <RadioButton android:id="@+id/bottomradioGroup_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" android:textColor="#FFFFFF" />
+    </RadioGroup>
+    <RelativeLayout android:id="@+id/rltVerifycode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrResentOTP" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/editLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnrefer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btnrefer" />
+    <ImageView android:id="@+id/imgfacebook" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imggoogle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrVerifyotpview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1E293B"
+        android:padding="16dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

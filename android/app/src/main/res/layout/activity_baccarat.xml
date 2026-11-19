@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F172A" />
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+    <TextView android:id="@+id/txt_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <LinearLayout android:id="@+id/lnrfollow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/relativeChip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/tvJackpotHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvItems" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/ivlastwinbg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgcard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/sticker_animation_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvonlineuser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtcountdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <View android:id="@+id/lnrOnlineUser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/ChipstoUser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btGameAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btGameAmount" />
+    <TextView android:id="@+id/txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/imgpl1circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrRedCardsParent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrBlackCardsParent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtBallence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_gameId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtGameRunning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtGameBets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/ivWine" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivlose" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvWine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvlose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <RelativeLayout android:id="@+id/rltwinnersymble1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rtllosesymble1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rec_rules" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrcancelist" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/ivContainerbg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rltDragon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rltTiger" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rltTie" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgback" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl1plus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl1minus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/iv_add" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvStartTimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <RelativeLayout android:id="@+id/rltOngoinGame" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

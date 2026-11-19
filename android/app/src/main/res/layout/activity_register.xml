@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F172A" />
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+    <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <RadioButton android:id="@+id/radioGroup_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male" android:textColor="#FFFFFF" android:checked="true" />
+        <RadioButton android:id="@+id/radioGroup_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" android:textColor="#FFFFFF" />
+    </RadioGroup>
+    <EditText android:id="@+id/edit_OTP" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edit_OTP" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edit_phone_edit" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edit_phone_edit" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <TextView android:id="@+id/tv_edit_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <EditText android:id="@+id/edtPhone" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtPhone" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edtPassword" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtPassword" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edtname" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtname" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edtReferalCode" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtReferalCode" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <TextView android:id="@+id/imglogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <LinearLayout android:id="@+id/lnrFirstScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrSeconScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrThirdScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgclose" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,5 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F172A" />
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+    <TextView android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/iv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_group_card" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rlt_icons" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgcard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/iv_jokercard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtresult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tv_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <LinearLayout android:id="@+id/lnr_declareview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tv_you" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <LinearLayout android:id="@+id/lnr_list" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgplwinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltParentLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgTable" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/animationview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivpickcard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/imgalphacard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@+id/circularProgressbar1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@+id/circularProgressbar2_new" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@+id/circularProgressbar2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@+id/circularProgressbar3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@+id/circularProgressbar4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@+id/circularProgressbar5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@+id/circularProgressbar6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@+id/circularProgressbar7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/sticker_animation_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivFirstlifecheck" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivSeconlifecheck" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tv_gamemessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/iv_jokercard2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@+id/root" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/bt_changecard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bt_changecard" />
+    <FrameLayout android:id="@+id/flUserHighlight" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgCardsandar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Switch android:id="@+id/touchmode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tv_gameid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tv_tableid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/ivDropCreate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/rlt_addcardview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltwinnersymble1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltwinnersymble2_new" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltwinnersymble2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltwinnersymble3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltwinnersymble4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltwinnersymble5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltwinnersymble6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltwinnersymble7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/iv_creategroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="iv_creategroup" />
+    <Button android:id="@+id/bt_declare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bt_declare" />
+    <Button android:id="@+id/bt_drop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bt_drop" />
+    <Button android:id="@+id/bt_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bt_finish" />
+    <Button android:id="@+id/bt_startgame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bt_startgame" />
+    <Button android:id="@+id/iv_discard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="iv_discard" />
+    <Button android:id="@+id/iv_sliptcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="iv_sliptcard" />
+    <RelativeLayout android:id="@+id/ivallcard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl1glow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl2_newglow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl2glow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl3glow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl4glow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl5glow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl6glow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl7glow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivfindeck" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl1circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl2_newcircle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl2circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl3circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl4circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl5circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl6circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl7circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtPlay1wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay2_newwallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay2wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay3wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay4wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay5wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay6wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay7wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <View android:id="@+id/lnruserdetails2_new" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/lnruserdetails2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/lnruserdetails3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/lnruserdetails4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/lnruserdetails5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/lnruserdetails6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/lnruserdetails7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtPlay2_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPlay7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtGameFinish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/imgpl1winner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpl1winnerstar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rltplayer2_new" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rltplayer2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rltplayer3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rltplayer4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/rltplayer5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivUserCardsGuid" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rlt_highlighted_pick" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rlt_highlighted_gadhi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_new2player" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltplayer6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltplayer7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/rtlAmpire" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/iv_rightarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/iv_leftarrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgback" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rlt_dropgameview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvTableType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvTableamount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/iv_arrow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/iv_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tv_private_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <RelativeLayout android:id="@+id/rl_invite" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rec_declareresult" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltCardView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.nhaarman.supertooltips.ToolTipRelativeLayout android:id="@+id/activity_main_tooltipRelativeLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgclosetop" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtSlidshow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvSlideCountDown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <View android:id="@+id/bt_sharewallet" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivFinishDesk" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivDrawCards" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/lnruserdetails1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvUserStatus1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvUserStatus2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvUserStatus3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvUserStatus4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvUserStatus5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvUserStatus6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvUserStatus7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/iv_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/ivChatUser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivShareUser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <RelativeLayout android:id="@+id/rltDrawCard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivrefresh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgaccespt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgclose" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tvCardCounts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/imgjokercard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recUsercardlist" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtheader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

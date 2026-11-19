@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F172A" />
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+    <TextView android:id="@+id/tvUserCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <FrameLayout android:id="@+id/home_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rlt_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtMail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tvGameRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recGamesList" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/edit_searchview" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edit_searchview" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <Button android:id="@+id/btn_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn_play" />
+    <ImageView android:id="@+id/img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/et_code" android:layout_width="match_parent" android:layout_height="44dp" android:hint="et_code" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <Button android:id="@+id/btn_join_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn_join_private" />
+    <com.viewpagerindicator.CirclePageIndicator android:id="@+id/titles" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager android:id="@+id/pager" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/homespin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgpublicGame" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgPrivategame" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ImgCustomePage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ImgVariationGane" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/iv_andher" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tv_2player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/tv_5player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_user_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/imgicon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <SeekBar android:id="@+id/seekBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtLimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtwalletchips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtheader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtBootamount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtPotLimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtNumberofBlind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtMaximumbetvalue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/imgclosetop" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgCreatetable" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager android:id="@+id/view_pager" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgLogout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ivIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrbuychips" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrmail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrinvite" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrsetting" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imaprofile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rlt_animation_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltimageptofile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtwallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txtproname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <LinearLayout android:id="@+id/lnr_all" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_multiplayer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_skills" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_sports" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_slots" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/btn_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/btn_multiplayer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/btn_skills" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/btn_sports" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/btn_slots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <com.teenpattigards.teenpattichampion.MyFlowLayout android:id="@+id/lnrGamesTabs" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_2player" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_5player" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_private" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltDragonTiger" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltTeenpatti" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltPrivate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltCustom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltAndharbhar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltRummy" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltJackpot" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltRummyDeal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltRummyPool" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltSeveUp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltCarRoullete" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/rltAnimalRoullete" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_redeem" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_statement" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_spin_win" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnrhistory" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_mail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_first_reacharge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/iv_add" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.teenpattigards.teenpattichampion.MyFlowLayout android:id="@+id/lnrTabs" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txtnotfound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rec_winning" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

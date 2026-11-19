@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F172A" />
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+    <TextView android:id="@+id/tv_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <EditText android:id="@+id/edtReportDecriction" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtReportDecriction" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <RelativeLayout android:id="@+id/rlt_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn_yes" />
+    <LinearLayout android:id="@+id/bt_no" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

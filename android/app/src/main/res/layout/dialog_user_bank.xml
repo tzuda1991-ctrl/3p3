@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0F172A" />
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dialog_user_bank"
+                android:textColor="#FBBF24"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+    <LinearLayout android:id="@+id/lnr_userinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@+id/lnr_updateuser" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@+id/imgclosetop" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/imgsub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/Headingfiled1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/Headingfiled2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/Headingfiled3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/Headingfiled4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/Headingfiled5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/img_diaProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/verified" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/txt_diaName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_diaPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_bank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_adhar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_upi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <TextView android:id="@+id/txt_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" />
+    <ImageView android:id="@+id/img_pan" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/img_aadhar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/edtUsername" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtUsername" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edt_pan" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edt_pan" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edt_aadar" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edt_aadar" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edt_bank_name" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edt_bank_name" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edt_ifsc" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edt_ifsc" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edt_account_holder" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edt_account_holder" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edt_account_no" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edt_account_no" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <Button android:id="@+id/btn_passbook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="btn_passbook" />
+    <ImageView android:id="@+id/img_passbook" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <EditText android:id="@+id/edtUserbank" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtUserbank" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edtUserupi" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtUserupi" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <EditText android:id="@+id/edtUseradhar" android:layout_width="match_parent" android:layout_height="44dp" android:hint="edtUseradhar" android:textColor="#FFFFFF" android:textColorHint="#94A3B8" android:background="#1E293B" android:padding="8dp" android:layout_marginBottom="6dp" />
+    <Button android:id="@+id/upload_pan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="upload_pan" />
+    <Button android:id="@+id/upload_aadhar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="upload_aadhar" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/design_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1E293B"
+        android:padding="16dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
